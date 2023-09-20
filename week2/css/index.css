@@ -1,0 +1,196 @@
+html,
+body {
+    font-family: 'Overpass', sans-serif;
+    font-size: 15px;
+    background-color: #141519;
+    color: hsl(217, 12%, 63%);
+}
+body {
+    margin: 195px 0 188px;
+}
+* {
+	box-sizing: border-box;
+}
+input,
+select {
+    vertical-align: middle;
+}
+img {
+    vertical-align: top;
+}
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: hsl(217, 12%, 63%);
+}
+.show {
+    display: block;
+}
+.hide {
+    display: none;
+}
+.pc_only {
+    display: block;
+}
+.sp_only {
+    display: none;
+}
+.inner {
+    width: 100%;
+    max-width: 444px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.content_box {
+    padding: 32px;
+    border-radius: 32px;
+    background-color: hsl(215, 22%, 15%);
+}
+.star {
+    display: inline-block;
+    padding: 15px;
+    border-radius: 23px;
+    background-color: hsl(210, 19%, 18%);
+}
+h1 {
+    margin-top: 37px;
+    font-size: 28px;
+    color: hsl(0, 0%, 100%);
+}
+.inquires {
+    margin-top: 16px;
+    line-height: 1.6;
+}
+.flex_btn {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+.flex_btn a {
+    display: flex;
+    justify-content: center;
+    padding: 18px;
+    width: 100%;
+    max-width: 53px;
+    border-radius: 24px;
+    background-color: hsl(213, 19%, 18%);
+}
+.flex_btn a.active {
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+}
+#enterButton {
+    color: hsl(0, 0%, 100%);
+    background: hsl(25, 97%, 53%);
+    border: none;
+    width: 97.6%;
+    margin-top: 31px;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1.6px;
+    padding: 14px 0;
+    border-radius: 23px;
+}
+#enterButton:hover {
+    color: hsl(25, 97%, 53%);
+    background: hsl(0, 0%, 100%);
+}
+.content_prev {
+    padding: 32px 32px 50px;
+    border-radius: 32px;
+    text-align: center;
+    background-color: hsl(215, 22%, 15%);
+}
+.ty {
+    margin-top: 12px;
+    margin-right: 9px;
+}
+.result {
+    display: inline-block;
+    margin-top: 33px;
+    padding: 10px 19px;
+    border-radius: 25px;
+    text-align: center;
+    color: hsl(25, 97%, 53%);
+    background-color: hsl(213, 19%, 18%);
+}
+.appreciation {    
+    margin-top: 36px;
+    font-size: 27px;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+}
+.remarks {
+    margin-top: 15px;
+    line-height: 1.5;
+}
+.spacing {
+    letter-spacing: 1px;
+}
+@media screen and (max-width: 767px) {
+    body {
+        margin: 154px 0 153px;
+    }
+    .pc_only {
+        display: none;
+    }
+    .sp_only {
+        display: block;
+    }
+    .inner {
+        padding: 0 23px 0 24px;
+    }
+    .content_box {
+        padding: 24px 24px 33px;
+        border-radius: 15px;
+    }
+    .star {
+        padding: 12px;
+    }
+    h1 {
+        margin-top: 23px;
+        font-size: 23px;
+        letter-spacing: 0.4px;
+    }
+    .inquires {
+        margin-top: 15px;
+        line-height: 1.5;
+        letter-spacing: -0.5px;
+    }
+    .flex_btn a {
+        padding: 15px 17px 13px;
+        max-width: 40px;
+    }
+    #enterButton {
+        width: 100%;
+        margin-top: 22px;
+        letter-spacing: 1.1px;
+    }
+    .content_prev {
+        padding: 24px 24px 38px;
+        border-radius: 15px;
+    }
+    .ty {
+        margin-top: 11px;
+        margin-left: 6px;
+    }
+    .ty img {
+        width: 53%;
+    }
+    .result {
+        margin-top: 25px;
+        padding: 10px 11px 8px;
+        font-size: 14px;
+    }
+    .appreciation {
+        margin-top: 28px;
+        font-size: 24px;
+    }
+    .remarks {
+        margin-top: 17px;
+        letter-spacing: -0.7px;
+    }
+    .spacing {
+        letter-spacing: 0.4px;
+    }
+}

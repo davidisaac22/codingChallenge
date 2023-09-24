@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    var ratingButtons = $('.flex_btn a');
+    var rateBtns = $('.flex_btn a');
     var activeCount = 0;
 
     function handleButtonClick(event) {
@@ -9,7 +9,7 @@ $(document).ready(function() {
         updateResult();
     }
 
-    ratingButtons.click(handleButtonClick);
+    rateBtns.click(handleButtonClick);
 
     function updateResult() {
         console.log(activeCount)

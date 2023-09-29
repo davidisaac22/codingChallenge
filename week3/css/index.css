@@ -1,0 +1,177 @@
+html,
+body {
+    font-family: 'Overpass', sans-serif;
+    font-size: 15px;
+    color: hsl(237, 12%, 33%);
+}
+body {
+    min-height: 100vh;
+    background-image: linear-gradient(
+    180deg,
+    hsl(273deg 75% 66%) 0%,
+    hsl(270deg 75% 66%) 8%,
+    hsl(268deg 75% 66%) 17%,
+    hsl(265deg 75% 66%) 25%,
+    hsl(262deg 74% 65%) 33%,
+    hsl(259deg 74% 65%) 42%,
+    hsl(257deg 74% 65%) 50%,
+    hsl(254deg 74% 65%) 58%,
+    hsl(251deg 74% 65%) 67%,
+    hsl(248deg 74% 65%) 75%,
+    hsl(246deg 73% 65%) 83%,
+    hsl(243deg 73% 65%) 92%,
+    hsl(240deg 73% 65%) 100%
+    );
+}
+* {
+	box-sizing: border-box;
+}
+input,
+select {
+    vertical-align: middle;
+}
+img {
+    vertical-align: top;
+}
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: hsl(237, 12%, 33%);
+}
+.show {
+    display: block;
+}
+.hide {
+    display: none;
+}
+.pc_only {
+    display: block;
+}
+.sp_only {
+    display: none;
+}
+.faqContainer {
+    position: relative;
+    width: 100%;
+    max-width: 920px;
+    margin: 129px auto 130px;
+    padding: 67px 95px 77px;
+    background: url("../images/bg-pattern-desktop.svg") top 68.5% left -559px / 103% auto no-repeat, url("../images/illustration-woman-online-desktop.svg") top 47.4%  left -84px / 51.3% auto no-repeat #fff;
+    border-radius: 23px;
+    -webkit-box-shadow: rgb(0 0 0 / 41%) 0px 6px 18px;
+    box-shadow: rgb(0 0 0 / 41%) 0px 6px 18px;
+}
+.faqContainer::before {
+    display: block;
+    position: absolute;
+    top: 59.2%;
+    left: -93px;
+    width: 191px;
+    height: 184px;
+    background: url(../images/illustration-box-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: "";
+    transform: translateY(-50%);
+}
+.faqContents {
+    width: 100%;
+    max-width: 349px;
+    margin-left: auto;
+}
+.faqContents h1 {
+    margin-bottom: 24px;
+    color: hsl(238, 29%, 16%);
+    font-size: 32px;
+    font-weight: 700;
+}
+.faqList li {
+    padding: 18px 0;
+    border-bottom: 1px solid hsl(240, 5%, 91%);
+}
+.faqList .question {
+    position: relative;
+    letter-spacing: -0.45px;
+    color: hsl(237, 12%, 33%);
+    cursor: pointer;
+}
+.faqList .question:hover {
+    color: hsl(14, 88%, 65%);
+}
+.faqList .question::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    width: 10px;
+    height: 7px;
+    background: url(../images/icon-arrow-down.svg) no-repeat;
+    content: "";
+    background-size: 100% 100%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+.faqList .question.active::after {
+    -webkit-transform: translateY(-50%) rotate(-180deg);
+    -ms-transform: translateY(-50%) rotate(-180deg);
+    transform: translateY(-50%) rotate(-180deg);
+}
+.faqList .question.active {
+    margin-bottom: 12px;
+    color: hsl(238, 29%, 16%);
+    font-weight: bold;
+}
+.faqList .answer {
+    display: none;
+}
+.faqList .answer.active {
+    display: block;
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+@media screen and (max-width: 767px) {
+    .wrap {
+        padding: 0 24px;
+    }
+    .faqContainer {
+        padding: 134px 25px 30px;
+        background: url(../images/bg-pattern-mobile.svg) top 0 center / 239px auto no-repeat #fff;
+    }
+    .faqContainer::before {
+        display: none;
+    }
+    .faqContainer::after {
+        display: block;
+        position: absolute;
+        top: -163px;
+        left: 50%;
+        z-index: 1;
+        min-width: 236px;
+        height: 236px;
+        background: url(../images/illustration-woman-online-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-size: 100% 123%;
+        content: "";
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+    .faqContents h1 {
+        text-align: center;
+    }
+    .faqList li {
+        padding: 13px 0 19px;
+    }
+    .faqList .question:hover {
+        color: unset;
+    }
+    .faqList .question::after {
+        right: 0;
+    }
+}

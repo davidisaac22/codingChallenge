@@ -1,0 +1,239 @@
+html {
+	scroll-behavior: smooth;
+}
+* {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body {
+	background: hsl(210, 46%, 95%);
+	font-size: 13px;
+	font-family: "Manrope", sans-serif;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.wrap {
+	margin: 0 auto;
+	padding: 0 24px;
+	max-width: 1440px;
+}
+.hide {
+	display: none;
+}
+.cardInner {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	margin: 260px auto;
+	background: hsl(0, 0%, 100%);
+	max-width: 730px;
+	border-radius: 10px;
+	box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.54);
+	-webkit-box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.54);
+	-moz-box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.54);
+}
+.cardImage {
+	width: 39%;
+	background: url(../images/drawers.jpg) center left no-repeat;
+	background-size: cover;
+	border-radius: 10px 0 0 10px;
+}
+.cardContents {
+	width: 60.9%;
+	padding: 33.1px 39px 32px 40px;
+}
+.cardContents h1 {
+	margin-bottom: 12px;
+	color: hsl(217, 19%, 35%);
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 1.4;
+	letter-spacing: 0.24px;
+}
+.cardContents p {
+	color: hsl(214, 17%, 51%);
+	line-height: 1.53;
+	letter-spacing: 0.12px;
+}
+.authorContainer {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+.authorContainer {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	margin-top: 18.5px;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-ms-flex-line-pack: center;
+	align-content: center;
+}
+.authorInfo {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+.authorInfo img {
+	width: 40px;
+	margin-right: 14px;
+	border-radius: 50%;
+}
+.author {
+	margin: 4.4px 2px 0;
+}
+.author h2 {
+	margin-bottom: 4px;
+	font-weight: 700;
+	letter-spacing: 0.1px;
+}
+.artShare {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	width: 32px;
+	height: 32px;
+	background: hsl(210, 46%, 95%);
+	border-radius: 50%;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+.artShare:hover {
+	background: hsl(214, 17%, 51%);
+}
+.artShare.focus {
+	background: hsl(214, 17%, 51%);
+}
+.artShare.focus img {
+	-webkit-filter: brightness(0) invert(1);
+	filter: brightness(0) invert(1);
+}
+.artShare:hover img {
+	-webkit-filter: brightness(0) invert(1);
+	filter: brightness(0) invert(1);
+}
+.artShare img {
+	width: 15px;
+	height: 13px;
+}
+.shareBtn .shareOption::after {
+	position: absolute;
+	bottom: -12px;
+	left: 50%;
+	width: 0;
+	height: 0;
+	content: "";
+	border-style: solid;
+	border-width: 12px 12px 0 12px;
+	border-color: hsl(217, 19%, 35%) transparent transparent transparent;
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+.shareBtn .shareOption a:nth-child(3) {
+	padding-top: 2px;
+}
+.shareBtn .shareOption p {
+	color: hsl(212, 23%, 69%);
+	font-size: 14px;
+	letter-spacing: 4.4px;
+}
+.active {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+@media only screen and (min-width: 768px) {
+	.shareBtn {
+		position: relative;
+	}
+	.shareOption {
+		position: absolute;
+		top: -83px;
+		left: 50%;
+		width: 248px;
+		padding: 18px 36px 15px;
+		background: hsl(217, 19%, 35%);
+		-webkit-transform: translateX(-50%);
+		-ms-transform: translateX(-50%);
+		transform: translateX(-50%);
+		border-radius: 10px;
+		-webkit-box-shadow: 0 20px 37px -17px rgba(0, 0, 1, 0.15);
+		box-shadow: 0 20px 37px -17px rgba(0, 0, 1, 0.15);
+	}
+	.active {
+		-webkit-box-pack: justify;
+		-ms-flex-pack: justify;
+		justify-content: space-between;
+	}
+}
+@media only screen and (max-width: 767px) {
+	.cardImage {
+		width: 100%;
+		height: 200px;
+		background: url(../images/drawers.jpg) center top -16px no-repeat;
+		background-size: cover;
+		border-radius: 10px 10px 0 0;
+	}
+	.cardInner {
+		display: block;
+		margin: 74px auto;
+	}
+	.cardContents {
+		position: relative;
+		width: 100%;
+		padding: 36px 32px 12px 32px;
+	}
+	.cardContents h1 {
+		margin-bottom: 13.3px;
+		font-size: 16px;
+		line-height: 1.5;
+		letter-spacing: 0.2px;
+	}
+	.authorContainer {
+		margin-top: 30px;
+	}
+	.author {
+		margin: 4.9px 2px 0;
+	}
+	.artShare {
+		position: relative;
+		z-index: 1;
+	}
+	.shareBtn .shareOption p {
+		margin-right: 17px;
+		font-size: 13px;
+		line-height: 1.6;
+		letter-spacing: 4.9px;
+	}
+	.shareBtn .shareOption::after {
+		display: none;
+	}
+	.shareOption a {
+		margin-right: 16px;
+	}
+	.shareOption {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		width: 100%;
+		padding: 22px 32.5px 20px;
+		background: hsl(217, 19%, 35%);
+		-webkit-transform: translateX(-50.15%);
+		-ms-transform: translateX(-50.15%);
+		transform: translateX(-50.15%);
+		border-radius: 0 0 10px 10px;
+	}
+}

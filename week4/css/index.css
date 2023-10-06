@@ -1,16 +1,15 @@
-html {
-	scroll-behavior: smooth;
-}
-* {
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-}
+html,
 body {
 	background: hsl(210, 46%, 95%);
 	font-size: 13px;
 	font-family: "Manrope", sans-serif;
 	background-repeat: no-repeat;
 	background-size: contain;
+	scroll-behavior: smooth;
+}
+* {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
 }
 .wrap {
 	margin: 0 auto;

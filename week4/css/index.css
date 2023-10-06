@@ -114,6 +114,7 @@ body {
 }
 .artShare.focus {
 	background: hsl(214, 17%, 51%);
+	cursor: pointer;
 }
 .artShare.focus img {
 	-webkit-filter: brightness(0) invert(1);
